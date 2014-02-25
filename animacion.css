@@ -1,0 +1,26 @@
+@charset "Lalo-Kun";
+/* Documento en CSS */
+
+body{
+                background:#6eb2d4;
+}
+#circulo { 
+   width: 140px;
+   height:140px;
+   background:#008040; 
+   -moz-border-radius: 70px; 
+   -webkit-border-radius: 70px; 
+   border-radius: 70px;
+   position :absolute;
+   top:256px;
+   left:450px;
+   animation:myfirst 5s;
+   -webkit-animation:myfirst 5s; /* Safari and Chrome */
+ }
+  
+
+ @-webkit-keyframes myfirst /* Safari and Chrome */
+{
+0%   {background:#008040; left:256px; top:256px;}
+25%  {background:yellow; left:450px; top:256px;}
+}
