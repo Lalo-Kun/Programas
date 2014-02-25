@@ -9,12 +9,12 @@ style="border: 1px solid #c3c3c3">
 
 <script type="text/javascript">
 var contexto;
-window.onload = function() {
+ {
     can = document.getElementById("miCanvas");
     contexto = can.getContext("2d");
     dibujar();
 }
-function dibujar() {
+
     contexto.strokeStyle = "#000000";
     contexto.fillStyle = "blue";
     contexto.beginPath();
@@ -22,7 +22,7 @@ function dibujar() {
     contexto.closePath();
     contexto.stroke();
     contexto.fill();
-}
+
 </script>
 
 <script type="text/javascript">
@@ -35,7 +35,7 @@ window.onload = function() {
     contexto = can.getContext("2d");
     posX=15;
     direccion = 0;
-    setInterval("dibujar()",2);
+    setInterval("dibujar()",4);
 }
 function dibujar() {
     if (direccion == 0)
